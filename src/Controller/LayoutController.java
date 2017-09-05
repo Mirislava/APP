@@ -5,19 +5,21 @@
  */
 package Controller;
 
-import app.MyApp;
-import java.awt.event.ActionEvent;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import static jdk.nashorn.internal.runtime.Debug.id;
+
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.BorderPane;
+
+import until.ViewChangerUtil;
 
 /**
  *
@@ -25,29 +27,50 @@ import static jdk.nashorn.internal.runtime.Debug.id;
  */
 public class LayoutController implements Initializable {
     @FXML
-    private BorderPane;
+    private Button btnSpeichernAction;
     @FXML
-    private
+    private Button btnLoschenAction;
     @FXML
-    private void btnPersonAction(ActionEvent event) throws Exception{
-        ((Node)(event.getSource())).getScene().getWindow().hide();
-
-        Parent parent = FXMLLoader.load(getClass().getResource("/PersonEditDialog.fxml"));
-        Stage stage=new Stage();
-        Scene scene=new Scene(parent);
-        stage.setScene(scene);
-        stage.setTitle("Mitarbeiter");
-        stage.getIcons().add(new Image(LayoutController.class.getResourceAsStream("ranorex-logo.png")));
-        stage.show();
-
-    }
- 
-  
+    private Button btnRuckgangigAction;
+    @FXML
+    private Button btnBearbeitenAction;
+    @FXML
+    private TextField suche;
+    @FXML
+    private Button btnSucheAction;
+    @FXML
+    private Button btnExitAction;
+    @FXML
+    private Button btnEinstellungenAction;
+    @FXML
+    private Button btnStart;
+     @FXML
+    private Button btnPerson;
     
-     @Override
-    public void initialize(URL location, ResourceBundle resources) {
+    @FXML
+    private BorderPane centerPane;
 
+
+
+    public void setBtnSpeichernAction(Button btnSpeichernAction) {
+        this.btnSpeichernAction = btnSpeichernAction;
+    }
+  
+
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        btnStart.setOnAction(value -> {
+            changeCenter("/app/StartView.fxml");
+        });
+         btnPerson.setOnAction(value -> {
+            changeCenter("/app/PersonEditView.fxml");
+        });
     }
 
+    public void changeCenter(String fxml){
+        ViewChangerUtil.setView(fxml, centerPane);
+    }
+    
     
 }

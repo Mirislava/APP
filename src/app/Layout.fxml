@@ -18,7 +18,7 @@
 
 <BorderPane fx:controller="Controller.LayoutController" fx:id="borderPane" minWidth="600.0" prefHeight="400.0" prefWidth="900.0" style="-fx-background-color: #545454;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
    <top>
-      <HBox prefHeight="38.0" prefWidth="600.0" style="-fx-background-color: §202020;" BorderPane.alignment="CENTER">
+      <HBox prefHeight="38.0" prefWidth="600.0" style="-fx-background-color: #202020;" BorderPane.alignment="CENTER">
          <children>
             <Button fx:id="btnSpeichern" contentDisplay="TOP" mnemonicParsing="false"  prefHeight="42.0" prefWidth="79.0" style="-fx-background-color: white;" text="Speichern">
                <HBox.margin>
@@ -103,7 +103,7 @@
                   <FontAwesomeIconView glyphName="UNIVERSITY" size="20" />
                </graphic>
             </Button>
-            <Button fx:id="btnPersonAction" mnemonicParsing="false"  prefHeight="50.0" prefWidth="161.0" style="-fx-background-color: grey;" text="Mitarbeiter">
+            <Button fx:id="btnPerson" mnemonicParsing="false"  prefHeight="50.0" prefWidth="161.0" style="-fx-background-color: grey;" text="Mitarbeiter">
                <font>
                   <Font size="14.0" />
                </font>
@@ -169,4 +169,10 @@
          </children>
       </VBox>
    </left>
+   
+   <center>
+       <BorderPane fx:id="centerPane">
+           
+       </BorderPane>
+   </center>
 </BorderPane>

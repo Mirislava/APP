@@ -60,6 +60,6 @@ public class LoginController implements Initializable{
                     e.printStackTrace();
                 }
             } else Msg.setText("Benutzername oder Kennword ist falsch! Bitte noch einmal eingeben! ");
-        }
+        });
     }
 }
