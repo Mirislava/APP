@@ -15,12 +15,17 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import static jdk.nashorn.internal.runtime.Debug.id;
 
 /**
  *
- * @author pjm
+ * @author Mirislava Turbic
  */
 public class LayoutController implements Initializable {
+    @FXML
+    private BorderPane;
+    @FXML
+    private
     @FXML
     private void btnPersonAction(ActionEvent event) throws Exception{
         ((Node)(event.getSource())).getScene().getWindow().hide();
@@ -33,6 +38,9 @@ public class LayoutController implements Initializable {
         stage.show();
 
     }
+ 
+  
+    
      @Override
     public void initialize(URL location, ResourceBundle resources) {
 

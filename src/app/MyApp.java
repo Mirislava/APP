@@ -14,7 +14,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author pjm
+ * @author Mirislava Turbic
  */
 public class MyApp extends Application {
     
@@ -34,9 +34,7 @@ public class MyApp extends Application {
         stage.show();
     }
 
-    /**
-     * @param args the command line arguments
-     */
+  
     public static void main(String[] args) {
         launch(args);
     }

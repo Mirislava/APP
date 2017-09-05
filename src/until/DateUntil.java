@@ -11,7 +11,7 @@ import java.time.format.DateTimeParseException;
 
 /**
  *
- * @author pjm
+ * @author MirislavaTurbic
  */
 public class DateUntil {
       /** The date pattern that is used for conversion. Change as you wish. */

@@ -22,11 +22,12 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 /**
+ * 
  *
- * @author pjm
+ * @author Mirislava Turbic
  */
 public class LoginController implements Initializable{
-       @FXML
+    @FXML
     private TextField username;
     @FXML
     private PasswordField password;
@@ -58,12 +59,7 @@ public class LoginController implements Initializable{
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-
-
-
             } else Msg.setText("Benutzername oder Kennword ist falsch! Bitte noch einmal eingeben! ");
-
-        });
+        }
     }
-    
 }

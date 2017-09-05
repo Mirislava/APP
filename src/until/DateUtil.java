@@ -7,7 +7,7 @@ package until;
 
 /**
  *
- * @author pjm
+ * @author Mirislava Turbic
  */
 class DateUtil {
 
