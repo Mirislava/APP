@@ -7,8 +7,8 @@ package app;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -27,9 +27,12 @@ public class MyApp extends Application {
         rootLayout = FXMLLoader.load(getClass().getResource("Login.fxml"));
         Scene scene = new Scene(rootLayout);
         primaryStage.setScene(scene);
+        primaryStage.getIcons().add(new Image(MyApp.class.getResourceAsStream("/app/ranorex-logo.png")));
         primaryStage.show();
 
         stage.setTitle("Ranorex");
+        //stage.getIcons().add(new Image(MyApp.class.getResourceAsStream("/app/ranorex-logo.png")));
+      
         stage.setScene(scene);
         stage.show();
     }

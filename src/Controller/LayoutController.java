@@ -5,6 +5,7 @@
  */
 package Controller;
 
+import app.MyApp;
 import java.awt.event.ActionEvent;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -14,6 +15,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import static jdk.nashorn.internal.runtime.Debug.id;
 
@@ -35,6 +37,7 @@ public class LayoutController implements Initializable {
         Scene scene=new Scene(parent);
         stage.setScene(scene);
         stage.setTitle("Mitarbeiter");
+        stage.getIcons().add(new Image(LayoutController.class.getResourceAsStream("ranorex-logo.png")));
         stage.show();
 
     }
