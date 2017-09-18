@@ -16,11 +16,11 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:controller="Controller.LayoutController" fx:id="borderPane" minWidth="600.0" prefHeight="400.0" prefWidth="900.0" style="-fx-background-color: #545454;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="borderPane" minWidth="600.0" prefHeight="400.0" prefWidth="900.0" style="-fx-background-color: #545454;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LayoutController">
    <top>
       <HBox prefHeight="38.0" prefWidth="600.0" style="-fx-background-color: #202020;" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="btnSpeichern" contentDisplay="TOP" mnemonicParsing="false"  prefHeight="42.0" prefWidth="79.0" style="-fx-background-color: white;" text="Speichern">
+            <Button fx:id="btnSpeichernAction" contentDisplay="TOP" mnemonicParsing="false" prefHeight="42.0" prefWidth="79.0" style="-fx-background-color: white;" text="Speichern">
                <HBox.margin>
                   <Insets />
                </HBox.margin>
@@ -28,7 +28,7 @@
                   <MaterialDesignIconView fontSmoothingType="LCD" glyphName="FLOPPY" size="20" strokeType="OUTSIDE" text="" />
                </graphic>
             </Button>
-            <Button fx:id="btnLöschen" contentDisplay="TOP" mnemonicParsing="false"  prefHeight="42.0" prefWidth="79.0" style="-fx-background-color: white;" text="Löshen">
+            <Button fx:id="btnLöschen" contentDisplay="TOP" mnemonicParsing="false" prefHeight="42.0" prefWidth="79.0" style="-fx-background-color: white;" text="Löshen">
                <graphic>
                   <MaterialDesignIconView fill="#0a0a0a" fontSmoothingType="LCD" glyphName="DELETE" size="20" strokeType="OUTSIDE" />
                </graphic>
@@ -36,7 +36,7 @@
                   <Insets left="2.0" />
                </HBox.margin>
             </Button>
-            <Button fx:id="btnRückgängig" contentDisplay="TOP" mnemonicParsing="false"  prefHeight="42.0" prefWidth="79.0" style="-fx-background-color: white;" text="Undo">
+            <Button fx:id="btnRückgängig" contentDisplay="TOP" mnemonicParsing="false" prefHeight="42.0" prefWidth="79.0" style="-fx-background-color: white;" text="Undo">
                <graphic>
                   <MaterialDesignIconView fill="#0a0a0a" fontSmoothingType="LCD" glyphName="UNDO_VARIANT" size="22" strokeType="OUTSIDE" />
                </graphic>
@@ -57,7 +57,7 @@
                   <Insets left="2.0" top="14.0" />
                </HBox.margin>
             </TextField>
-            <Button fx:id="btnSuche" mnemonicParsing="false"  prefHeight="51.0" prefWidth="39.0" style="-fx-background-color: white;">
+            <Button fx:id="btnSuche" mnemonicParsing="false" prefHeight="51.0" prefWidth="39.0" style="-fx-background-color: white;">
                <HBox.margin>
                   <Insets left="2.0" />
                </HBox.margin>
@@ -65,7 +65,7 @@
                   <FontAwesomeIconView glyphName="SEARCH" size="20" wrappingWidth="22.571428298950195" />
                </graphic>
             </Button>
-            <Button fx:id="btnExit" contentDisplay="TOP" mnemonicParsing="false"  prefHeight="58.0" prefWidth="79.0" style="-fx-background-color: white;" text="Abbrechen" textAlignment="RIGHT">
+            <Button fx:id="btnExit" contentDisplay="TOP" mnemonicParsing="false" prefHeight="58.0" prefWidth="79.0" style="-fx-background-color: white;" text="Abbrechen" textAlignment="RIGHT">
                <HBox.margin>
                   <Insets left="2.0" />
                </HBox.margin>
@@ -73,7 +73,7 @@
                   <FontAwesomeIconView glyphName="TIMES_CIRCLE" size="20" />
                </graphic>
             </Button>
-            <MenuButton fx:id="einstellungen" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false"  prefHeight="52.0" prefWidth="98.0" style="-fx-background-color: white;">
+            <MenuButton fx:id="einstellungen" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="52.0" prefWidth="98.0" style="-fx-background-color: white;">
               <items>
                 <MenuItem mnemonicParsing="false" text="Logout" />
                 <MenuItem mnemonicParsing="false" text="Exit" />
@@ -95,62 +95,80 @@
    <left>
       <VBox prefHeight="349.0" prefWidth="162.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="btnStart" mnemonicParsing="false"  prefHeight="50.0" prefWidth="161.0" style="-fx-background-color: grey;" text="Startseite">
-               <font>
-                  <Font size="14.0" />
-               </font>
+            <JFXButton fx:id="btnStart" buttonType="RAISED" prefHeight="50.0" prefWidth="162.0" style="-fx-background-color: grey;" text="Startseite">
                <graphic>
                   <FontAwesomeIconView glyphName="UNIVERSITY" size="20" />
                </graphic>
-            </Button>
-            <Button fx:id="btnPerson" mnemonicParsing="false"  prefHeight="50.0" prefWidth="161.0" style="-fx-background-color: grey;" text="Mitarbeiter">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.6904761904761905" startY="0.15238095238095237">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="BLACK" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
                <font>
-                  <Font size="14.0" />
+                  <Font size="16.0" />
                </font>
-               <padding>
-                  <Insets top="1.0" />
-               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnPerson" buttonType="RAISED" prefHeight="50.0" prefWidth="162.0" style="-fx-background-color: grey;" text="Mitarbeiter">
                <graphic>
                   <FontAwesomeIconView glyphName="USERS" size="20" />
                </graphic>
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.6904761904761905" startY="0.15238095238095237">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="BLACK" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font size="16.0" />
+               </font>
                <VBox.margin>
                   <Insets top="1.0" />
                </VBox.margin>
-            </Button>
-            <Button fx:id="btnGespräche" mnemonicParsing="false"  prefHeight="50.0" prefWidth="161.0" style="-fx-background-color: grey;" text="Gespräche">
-               <font>
-                  <Font size="14.0" />
-               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnGespräche" buttonType="RAISED" prefHeight="50.0" prefWidth="162.0" style="-fx-background-color: grey;" text="Gespräche">
                <graphic>
                   <FontAwesomeIconView glyphName="TACHOMETER" size="20" />
                </graphic>
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.6904761904761905" startY="0.15238095238095237">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="BLACK" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font size="16.0" />
+               </font>
                <VBox.margin>
                   <Insets top="1.0" />
                </VBox.margin>
-            </Button>
-            <Button fx:id="btnBildung" mnemonicParsing="false"  prefHeight="50.0" prefWidth="161.0" style="-fx-background-color: grey;" text="Bildungen">
-               <font>
-                  <Font size="14.0" />
-               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnBildung" buttonType="RAISED" prefHeight="50.0" prefWidth="162.0" style="-fx-background-color: grey;" text="Bildungen">
                <graphic>
                   <FontAwesomeIconView glyphName="MORTAR_BOARD" size="20" />
                </graphic>
-               <VBox.margin>
-                  <Insets top="1.0" />
-               </VBox.margin>
-            </Button>
-            <Button fx:id="btnÜbersicht" mnemonicParsing="false"  prefHeight="50.0" prefWidth="161.0" style="-fx-background-color: grey;" text="Übersicht" textOverrun="CENTER_ELLIPSIS">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.6904761904761905" startY="0.15238095238095237">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="BLACK" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
                <font>
-                  <Font size="14.0" />
+                  <Font size="16.0" />
                </font>
-               <graphic>
-                  <FontAwesomeIconView glyphName="TH_LIST" size="20" />
-               </graphic>
                <VBox.margin>
                   <Insets top="1.0" />
                </VBox.margin>
-            </Button>
-            <JFXButton buttonType="RAISED" prefHeight="50.0" prefWidth="162.0" style="-fx-background-color: #337ab7;" text="Übersicht">
+            </JFXButton>
+            <JFXButton fx:id="btnÜbersicht" buttonType="RAISED" prefHeight="50.0" prefWidth="162.0" style="-fx-background-color: #337ab7;" text="Übersicht">
                <graphic>
                   <FontAwesomeIconView glyphName="TH_LIST" size="20" />
                </graphic>
@@ -165,6 +183,9 @@
                <VBox.margin>
                   <Insets top="1.0" />
                </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
             </JFXButton>
          </children>
       </VBox>
