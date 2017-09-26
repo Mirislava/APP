@@ -16,11 +16,11 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="borderPane" minWidth="600.0" prefHeight="400.0" prefWidth="900.0" style="-fx-background-color: #545454;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LayoutController">
+<BorderPane fx:id="borderPane" minWidth="600.0" prefHeight="400.0" prefWidth="900.0" style="-fx-background-color: lightgrey;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LayoutController">
    <top>
-      <HBox prefHeight="38.0" prefWidth="600.0" style="-fx-background-color: #202020;" BorderPane.alignment="CENTER">
+      <HBox prefHeight="38.0" prefWidth="600.0" style="-fx-background-color: lightgrey;" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="btnSpeichernAction" contentDisplay="TOP" mnemonicParsing="false" prefHeight="42.0" prefWidth="79.0" style="-fx-background-color: white;" text="Speichern">
+            <Button fx:id="btnSpeichernAction" contentDisplay="TOP" mnemonicParsing="false" prefHeight="42.0" prefWidth="79.0" style="-fx-background-color: #00a9e7;" text="Speichern">
                <HBox.margin>
                   <Insets />
                </HBox.margin>
@@ -28,7 +28,7 @@
                   <MaterialDesignIconView fontSmoothingType="LCD" glyphName="FLOPPY" size="20" strokeType="OUTSIDE" text="" />
                </graphic>
             </Button>
-            <Button fx:id="btnLöschen" contentDisplay="TOP" mnemonicParsing="false" prefHeight="42.0" prefWidth="79.0" style="-fx-background-color: white;" text="Löshen">
+            <Button fx:id="btnLöschen" contentDisplay="TOP" mnemonicParsing="false" prefHeight="42.0" prefWidth="79.0" style="-fx-background-color: #00a9e7;" text="Löshen">
                <graphic>
                   <MaterialDesignIconView fill="#0a0a0a" fontSmoothingType="LCD" glyphName="DELETE" size="20" strokeType="OUTSIDE" />
                </graphic>
@@ -36,7 +36,7 @@
                   <Insets left="2.0" />
                </HBox.margin>
             </Button>
-            <Button fx:id="btnRückgängig" contentDisplay="TOP" mnemonicParsing="false" prefHeight="42.0" prefWidth="79.0" style="-fx-background-color: white;" text="Undo">
+            <Button fx:id="btnRückgängig" contentDisplay="TOP" mnemonicParsing="false" prefHeight="42.0" prefWidth="79.0" style="-fx-background-color: #00a9e7;" text="Rückgängig">
                <graphic>
                   <MaterialDesignIconView fill="#0a0a0a" fontSmoothingType="LCD" glyphName="UNDO_VARIANT" size="22" strokeType="OUTSIDE" />
                </graphic>
@@ -44,7 +44,7 @@
                   <Insets left="2.0" />
                </HBox.margin>
             </Button>
-            <Button contentDisplay="TOP" mnemonicParsing="false" prefHeight="44.0" prefWidth="79.0" style="-fx-background-color: white;" text="Bearbeiten">
+            <Button contentDisplay="TOP" mnemonicParsing="false" prefHeight="44.0" prefWidth="79.0" style="-fx-background-color: #00a9e7;" text="Bearbeiten">
                <HBox.margin>
                   <Insets left="2.0" />
                </HBox.margin>
@@ -57,7 +57,7 @@
                   <Insets left="2.0" top="14.0" />
                </HBox.margin>
             </TextField>
-            <Button fx:id="btnSuche" mnemonicParsing="false" prefHeight="51.0" prefWidth="39.0" style="-fx-background-color: white;">
+            <Button fx:id="btnSuche" mnemonicParsing="false" prefHeight="51.0" prefWidth="39.0" style="-fx-background-color: #00a9e7;">
                <HBox.margin>
                   <Insets left="2.0" />
                </HBox.margin>
@@ -65,7 +65,7 @@
                   <FontAwesomeIconView glyphName="SEARCH" size="20" wrappingWidth="22.571428298950195" />
                </graphic>
             </Button>
-            <Button fx:id="btnExit" contentDisplay="TOP" mnemonicParsing="false" prefHeight="58.0" prefWidth="79.0" style="-fx-background-color: white;" text="Abbrechen" textAlignment="RIGHT">
+            <Button fx:id="btnExit" contentDisplay="TOP" mnemonicParsing="false" prefHeight="58.0" prefWidth="79.0" style="-fx-background-color: #00a9e7;" text="Abbrechen" textAlignment="RIGHT">
                <HBox.margin>
                   <Insets left="2.0" />
                </HBox.margin>
@@ -73,7 +73,7 @@
                   <FontAwesomeIconView glyphName="TIMES_CIRCLE" size="20" />
                </graphic>
             </Button>
-            <MenuButton fx:id="einstellungen" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="52.0" prefWidth="98.0" style="-fx-background-color: white;">
+            <MenuButton fx:id="einstellungen" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="52.0" prefWidth="98.0" style="-fx-background-color: #00a9e7;">
               <items>
                 <MenuItem mnemonicParsing="false" text="Logout" />
                 <MenuItem mnemonicParsing="false" text="Exit" />
@@ -95,7 +95,7 @@
    <left>
       <VBox prefHeight="349.0" prefWidth="162.0" BorderPane.alignment="CENTER">
          <children>
-            <JFXButton fx:id="btnStart" buttonType="RAISED" prefHeight="50.0" prefWidth="162.0" style="-fx-background-color: grey;" text="Startseite">
+            <JFXButton fx:id="btnStart" buttonType="RAISED" prefHeight="50.0" prefWidth="162.0" style="-fx-background-color: #ff5656;" text="Startseite">
                <graphic>
                   <FontAwesomeIconView glyphName="UNIVERSITY" size="20" />
                </graphic>
@@ -111,7 +111,7 @@
                   <Font size="16.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="btnPerson" buttonType="RAISED" prefHeight="50.0" prefWidth="162.0" style="-fx-background-color: grey;" text="Mitarbeiter">
+            <JFXButton fx:id="btnPerson" buttonType="RAISED" prefHeight="50.0" prefWidth="162.0" style="-fx-background-color: #ff5656;" text="Mitarbeiter">
                <graphic>
                   <FontAwesomeIconView glyphName="USERS" size="20" />
                </graphic>
@@ -130,7 +130,7 @@
                   <Insets top="1.0" />
                </VBox.margin>
             </JFXButton>
-            <JFXButton fx:id="btnGespräche" buttonType="RAISED" prefHeight="50.0" prefWidth="162.0" style="-fx-background-color: grey;" text="Gespräche">
+            <JFXButton fx:id="btnGespräche" buttonType="RAISED" prefHeight="50.0" prefWidth="162.0" style="-fx-background-color: #ff5656;" text="Gespräche">
                <graphic>
                   <FontAwesomeIconView glyphName="TACHOMETER" size="20" />
                </graphic>
@@ -149,7 +149,7 @@
                   <Insets top="1.0" />
                </VBox.margin>
             </JFXButton>
-            <JFXButton fx:id="btnBildung" buttonType="RAISED" prefHeight="50.0" prefWidth="162.0" style="-fx-background-color: grey;" text="Bildungen">
+            <JFXButton fx:id="btnBildung" buttonType="RAISED" prefHeight="50.0" prefWidth="162.0" style="-fx-background-color: #ff5656;" text="Bildungen">
                <graphic>
                   <FontAwesomeIconView glyphName="MORTAR_BOARD" size="20" />
                </graphic>
@@ -168,7 +168,7 @@
                   <Insets top="1.0" />
                </VBox.margin>
             </JFXButton>
-            <JFXButton fx:id="btnÜbersicht" buttonType="RAISED" prefHeight="50.0" prefWidth="162.0" style="-fx-background-color: #337ab7;" text="Übersicht">
+            <JFXButton fx:id="btnÜbersicht" buttonType="RAISED" prefHeight="50.0" prefWidth="162.0" style="-fx-background-color: #00a9e7;" text="Übersicht">
                <graphic>
                   <FontAwesomeIconView glyphName="TH_LIST" size="20" />
                </graphic>
