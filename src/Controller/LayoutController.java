@@ -58,14 +58,13 @@ public class LayoutController implements Initializable {
     }
   
 
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         btnStart.setOnAction(value -> {
             changeCenter("/app/StartView.fxml");
         });
          btnPerson.setOnAction(value -> {
-            changeCenter("/app/PersonEditView.fxml");
+            changeCenter("/app/Mitarbeiter_Startseite.fxml");
         });
     }
 

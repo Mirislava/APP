@@ -16,7 +16,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="borderPane" minWidth="600.0" prefHeight="400.0" prefWidth="900.0" style="-fx-background-color: lightgrey;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LayoutController">
+<BorderPane fx:id="borderPane" minWidth="600.0" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: lightgrey;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LayoutController">
    <top>
       <HBox prefHeight="38.0" prefWidth="600.0" style="-fx-background-color: lightgrey;" BorderPane.alignment="CENTER">
          <children>
@@ -192,7 +192,7 @@
    </left>
    
    <center>
-       <BorderPane fx:id="centerPane">
+       <BorderPane fx:id="centerPane" prefHeight="600.0" prefWidth="1100.0">
            
        </BorderPane>
    </center>
