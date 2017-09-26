@@ -5,15 +5,23 @@
  */
 package app;
 
+import com.jfoenix.controls.JFXButton;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+
 
 /**
  *
  * @author pjm
  */
 public class StartView implements Initializable {
+    @FXML JFXButton btnMitarbeiter;
+    @FXML JFXButton btnGespraeche;
+    @FXML JFXButton btnBildungen;
+    @FXML JFXButton btnOverview;
+    
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {

@@ -5,6 +5,7 @@
  */
 package Controller;
 
+import com.jfoenix.controls.JFXButton;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
@@ -43,9 +44,9 @@ public class LayoutController implements Initializable {
     @FXML
     private Button btnEinstellungenAction;
     @FXML
-    private Button btnStart;
+    private JFXButton btnStart;
      @FXML
-    private Button btnPerson;
+    private JFXButton btnPerson;
     
     @FXML
     private BorderPane centerPane;
@@ -61,10 +62,10 @@ public class LayoutController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         btnStart.setOnAction(value -> {
-            changeCenter("/app/resources/StartView.fxml");
+            changeCenter("/app/StartView.fxml");
         });
          btnPerson.setOnAction(value -> {
-            changeCenter("/app//resources/PersonEditView.fxml");
+            changeCenter("/app/PersonEditView.fxml");
         });
     }
 
