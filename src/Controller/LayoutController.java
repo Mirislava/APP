@@ -20,7 +20,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 
-import until.ViewChangerUtil;
+import util.ViewChangerUtil;
 
 /**
  *
@@ -49,7 +49,7 @@ public class LayoutController implements Initializable {
     private JFXButton btnPerson;
     
     @FXML
-    private BorderPane centerPane;
+    private BorderPane borderPane;
 
 
 
@@ -69,7 +69,7 @@ public class LayoutController implements Initializable {
     }
 
     public void changeCenter(String fxml){
-        ViewChangerUtil.setView(fxml, centerPane);
+        ViewChangerUtil.setView(fxml, borderPane);
     }
     
     
