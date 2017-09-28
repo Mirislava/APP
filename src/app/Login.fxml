@@ -11,11 +11,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="461.0" prefWidth="700.0" style="-fx-background-color: lightgrey;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="461.0" prefWidth="700.0" style="-fx-background-color: #e7edf0;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
    <children>
-      <AnchorPane layoutX="361.0" layoutY="73.0" prefHeight="292.0" prefWidth="273.0" style="-fx-background-color: #ff5656;" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="73.0">
+      <AnchorPane layoutX="361.0" layoutY="73.0" prefHeight="292.0" prefWidth="273.0" style="-fx-background-color: #f5efbf;" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="73.0">
          <children>
-            <Label fx:id="Msg" layoutX="93.0" layoutY="14.0" style="-fx-background-color: none; -fx-background-radius: 4;" text="Anmelden" textFill="WHITE">
+            <Label fx:id="Msg" layoutX="93.0" layoutY="14.0" style="-fx-background-color: none; -fx-background-radius: 4;" text="Anmelden">
                <font>
                   <Font name="SansSerif Regular" size="15.0" />
                </font>
@@ -25,7 +25,7 @@
             </Label>
             <JFXTextField fx:id="username" focusColor="#f4fff9" layoutX="69.0" layoutY="78.0" promptText="Benutzername" unFocusColor="BLACK" />
             <JFXPasswordField fx:id="password" focusColor="#f4fff9" layoutX="71.0" layoutY="146.0" promptText="Kennwort" unFocusColor="#0a0a0a" />
-            <JFXButton fx:id="anmelden" layoutX="76.0" layoutY="230.0" prefHeight="31.0" prefWidth="135.0" ripplerFill="#f2eeee" style="-fx-background-color: #04afff; -fx-background-radius: 30px;" text="Login" textFill="#eeeeee">
+            <JFXButton fx:id="anmelden" buttonType="RAISED" layoutX="76.0" layoutY="230.0" prefHeight="31.0" prefWidth="135.0" ripplerFill="WHITE" style="-fx-background-color: #b2cdf4; -fx-background-radius: 30px;" text="Login" textFill="#f5efbf">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
@@ -57,9 +57,9 @@
          </children>
       </AnchorPane>
       <Separator layoutX="415.0" layoutY="397.0" opacity="0.21" prefHeight="0.0" prefWidth="273.0" />
-      <JFXButton fx:id="kennwort" layoutX="455.0" layoutY="416.0" prefHeight="31.0" prefWidth="205.0" ripplerFill="#f2eeee" style="-fx-background-color: none;" text="Kennwort vergessen?" textFill="#eeeeee">
+      <JFXButton fx:id="kennwort" layoutX="455.0" layoutY="416.0" prefHeight="31.0" prefWidth="205.0" ripplerFill="#e4e3e3" style="-fx-background-color: none;" text="Kennwort vergessen?" textFill="#393939">
          <font>
-            <Font size="15.0" />
+            <Font size="13.0" />
          </font>
       </JFXButton>
    </children>

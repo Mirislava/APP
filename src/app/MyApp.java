@@ -20,6 +20,7 @@ public class MyApp extends Application {
     
     private Stage primaryStage;
     private AnchorPane rootLayout;
+   
 
     @Override
     public void start(Stage stage) throws Exception {
